@@ -80,64 +80,64 @@ To interact with the smart contracts, you need:
 1. **HelloWorld.sol**
    A simple contract that stores and returns the string "Hello, World!".
    - Functionality:
-      - sendGreetings(string memory _greetins) – Updates the stored message.
+      - `sendGreetings(string memory _greetins)` – Updates the stored message.
 
 2. **Counter.sol**
    A contract that keeps track of a counter with increment, decrement, and
    reset functionality.
    - Functionality:
-      - increment() – Increases the counter by 1.
-      - decrement() – Decreases the counter by 1.
-      - reset() – Resets the counter to 0.
+      - `increment()` – Increases the counter by 1.
+      - `decrement()` – Decreases the counter by 1.
+      - `reset()` – Resets the counter to 0.
 
 3. **SimpleStorage.sol**
    A contract that stores and retrieves an unsigned integer.
    - Functionality:
-      - setData(uint _data) – Sets the data of the integer.
-      - getData() – Returns the stored integer.
+      - `setData(uint _data)` – Sets the data of the integer.
+      - `getData()` – Returns the stored integer.
 
 4. **EtherWallet.sol**
    A basic wallet contract that allows depositing and withdrawing Ether.
    - Functionality:
-      - constructor() – Deposits Ether into the wallet.
-      - withdraw(uint _amount) – Withdraws Ether from the wallet.
-      - getBalance() – Returns the contract's balance.
+      - `constructor()` – Deposits Ether into the wallet.
+      - `withdraw(uint _amount)` – Withdraws Ether from the wallet.
+      - `getBalance()` – Returns the contract's balance.
 
 5. **Voting.sol**
    A simple voting contract for two candidates.
    - Functionality:
-      - vote(string memory candidate) – Cast a vote for a candidate (1 or 2).
-      - getVotes() – Returns the current vote count for each candidates.
+      - `vote(string memory candidate)` – Cast a vote for a candidate (1 or 2).
+      - `getVotes()` – Returns the current vote count for each candidates.
 
 6. **TodoList.sol**
    A to-do list contract where users can add and mark tasks as completed.
    - Functionality:
-      - addTask(string memory _content) – Adds a new task to the list.
-      - toggleTask(uint _index) – Marks a task as completed.
-      - getTask(uint _index) - Returns the task's status.
-      - taskCount() - Returns task's count.
+      - `addTask(string memory _content)` – Adds a new task to the list.
+      - `toggleTask(uint _index)` – Marks a task as completed.
+      - `getTask(uint _index)` - Returns the task's status.
+      - `taskCount()` - Returns task's count.
 
 7. **Ownable.sol**
    A contract demonstrating ownership and restricted access using modifiers.
    - Functionality:
-      - transferOwnership(address newOwner) – Transfers ownership to a new address.
-      - onlyOwnerFunction() – A function restricted to the contract owner.
+      - `transferOwnership(address newOwner)` – Transfers ownership to a new address.
+      - `onlyOwnerFunction()` – A function restricted to the contract owner.
     
 8. **Faucet.sol**
    A faucet contract that lets users withdraw a small amount of Ether for testing purposes.
    - Functionality:
-      - withdraw(uint amount) – Withdraw a fixed amount of Ether from the faucet.
+      - `withdraw(uint amount)` – Withdraw a fixed amount of Ether from the faucet.
 
 9. **Bank.sol**
 A contract that simulates deposit and withdrawal of Ether with per-user balances.
 - Functionality:
-   - deposit() – Deposits Ether into the user's account.
-   - withdraw(uint amount) – Withdraws Ether from the user's account.
-   - getBalance() – Returns the balance of the caller.
+   - `deposit()` – Deposits Ether into the user's account.
+   - `withdraw(uint amount)` – Withdraws Ether from the user's account.
+   - `getBalance()` – Returns the balance of the caller.
 
 10. **SimpleAuction.sol**
 A simple auction contract with the highest bidder winning.
 - Functionality:
-   - bid() – Places a bid for the auction.
-   - endAuction() – Ends the auction and sends the Ether to the highest bidder.
-   - getAuctionStatus() - Returns highest bidder & highest bid.
+   - `bid()` – Places a bid for the auction.
+   - `endAuction()` – Ends the auction and sends the Ether to the highest bidder.
+   - `getAuctionStatus()` - Returns highest bidder & highest bid.
