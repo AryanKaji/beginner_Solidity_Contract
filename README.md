@@ -4,6 +4,20 @@ This repository contains a collection of 10 simple Solidity smart contracts desi
 
 ## Contracts List
 
+| #  | Contract Name     | Description                                                                |
+| -- | ----------------- | -------------------------------------------------------------------------- |
+| 1  | HelloWorld.sol    | A basic contract that stores and returns a string ("Hello, World!").       |
+| 2  | Counter.sol       | A simple counter with increment, decrement, and reset functionality.       |
+| 3  | SimpleStorage.sol | Stores and retrieves a single unsigned integer.                            |
+| 4  | EtherWallet.sol   | A wallet that allows depositing and withdrawing Ether.                     |
+| 5  | Voting.sol        | A basic voting system for two candidates.                                  |
+| 6  | TodoList.sol      | A simple to-do list where users can add and mark tasks as completed.       |
+| 7  | Ownable.sol       | Demonstrates ownership and restricted access using modifiers.              |
+| 8  | Faucet.sol        | A contract that lets users withdraw a small amount of Ether (for testing). |
+| 9  | Bank.sol          | Simulates deposit and withdrawal of Ether with per-user balances.          |
+| 10 | SimpleAuction.sol | A simple bidding system for an auction with the highest bidder winning.    |
+
+
 1. **HelloWorld.sol**  
    A basic contract that stores and returns the string "Hello, World!".
    - Key Concepts: State Variables, Simple Functions
