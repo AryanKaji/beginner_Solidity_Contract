@@ -1,6 +1,7 @@
 # Beginner-Friendly Solidity Smart Contracts
 
 This repository contains a collection of 10 simple Solidity smart contracts designed to help beginners learn the fundamentals of Solidity and smart contract development. Each contract introduces key concepts such as state variables, functions, Ether handling, ownership, access control, and more.
+---
 
 ## Contracts List
 
