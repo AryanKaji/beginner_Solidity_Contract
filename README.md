@@ -80,8 +80,7 @@ To interact with the smart contracts, you need:
 1. **HelloWorld.sol**
    A simple contract that stores and returns the string "Hello, World!".
    - Functionality:
-      - getMessage() – Returns the stored message.
-      - setMessage(string _message) – Updates the stored message.
+      - sendGreetings(string memory _greetins) – Updates the stored message.
 
 2. **Counter.sol**
    A contract that keeps track of a counter with increment, decrement, and
@@ -94,27 +93,29 @@ To interact with the smart contracts, you need:
 3. **SimpleStorage.sol**
    A contract that stores and retrieves an unsigned integer.
    - Functionality:
-      - set(uint _value) – Sets the value of the integer.
-      - get() – Returns the stored integer.
+      - setData(uint _data) – Sets the data of the integer.
+      - getData() – Returns the stored integer.
 
 4. **EtherWallet.sol**
    A basic wallet contract that allows depositing and withdrawing Ether.
    - Functionality:
-      - deposit() – Deposits Ether into the wallet.
+      - constructor() – Deposits Ether into the wallet.
       - withdraw(uint _amount) – Withdraws Ether from the wallet.
       - getBalance() – Returns the contract's balance.
 
 5. **Voting.sol**
    A simple voting contract for two candidates.
    - Functionality:
-      - vote(uint candidate) – Cast a vote for a candidate (1 or 2).
-      - getVotes() – Returns the current vote count for both candidates.
+      - vote(string memory candidate) – Cast a vote for a candidate (1 or 2).
+      - getVotes() – Returns the current vote count for each candidates.
 
 6. **TodoList.sol**
    A to-do list contract where users can add and mark tasks as completed.
    - Functionality:
-      - addTask(string _task) – Adds a new task to the list.
-      - completeTask(uint _taskId) – Marks a task as completed.
+      - addTask(string memory _content) – Adds a new task to the list.
+      - toggleTask(uint _index) – Marks a task as completed.
+      - getTask(uint _index) - Returns the task's status.
+      - taskCount() - Returns task's count.
 
 7. **Ownable.sol**
    A contract demonstrating ownership and restricted access using modifiers.
@@ -131,7 +132,7 @@ To interact with the smart contracts, you need:
 A contract that simulates deposit and withdrawal of Ether with per-user balances.
 - Functionality:
    - deposit() – Deposits Ether into the user's account.
-   - withdraw(uint _amount) – Withdraws Ether from the user's account.
+   - withdraw(uint amount) – Withdraws Ether from the user's account.
    - getBalance() – Returns the balance of the caller.
 
 10. **SimpleAuction.sol**
@@ -139,7 +140,4 @@ A simple auction contract with the highest bidder winning.
 - Functionality:
    - bid() – Places a bid for the auction.
    - endAuction() – Ends the auction and sends the Ether to the highest bidder.
- 
-## License
-This project is licensed under the MIT License - see the [License](#license)
-file for details.
+   - getAuctionStatus() - Returns highest bidder & highest bid.
