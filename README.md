@@ -17,6 +17,7 @@ This repository contains a collection of 10 simple Solidity smart contracts desi
 | 8  | Faucet.sol        | A contract that lets users withdraw a small amount of Ether (for testing). |
 | 9  | Bank.sol          | Simulates deposit and withdrawal of Ether with per-user balances.          |
 | 10 | SimpleAuction.sol | A simple bidding system for an auction with the highest bidder winning.    |
+---
 
 ## Requirements
 
@@ -26,6 +27,7 @@ To interact with the smart contracts, you need:
 - **Remix IDE** or any other Solidity-compatible development environment
 - A test Ethereum network (e.g., Rinkeby, Ropsten) for deploying contracts
 - Metamask or another Ethereum wallet to interact with the contracts
+---
 
 ## Contract Details
 
@@ -93,3 +95,4 @@ A simple auction contract with the highest bidder winning.
    - `bid()` – Places a bid for the auction.
    - `endAuction()` – Ends the auction and sends the Ether to the highest bidder.
    - `getAuctionStatus()` - Returns highest bidder & highest bid.
+---
