@@ -26,28 +26,6 @@ To interact with the smart contracts, you need:
 - A test Ethereum network (e.g., Rinkeby, Ropsten) for deploying contracts
 - Metamask or another Ethereum wallet to interact with the contracts
 
-## Getting Started
-
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/your-username/solidity-beginner-contracts.git
-   cd solidity-beginner-contracts
-   ```
-   
-2. **Set up your development environment:**
-    You can use the [Remix IDE](https://remix.ethereum.org/) to compile and deploy
-    the contracts directly in the browser. Alternatively, you can use Truffle
-    or Hardhat if you prefer a local development setup.
-   
-3. **Deploy Contracts:**
-    - Open any contract in Remix IDE
-    - Compile the contract (ensure you're using the correct version of Solidity)
-    - Deploy the contract on the Ethereum testnet (e.g., Rinkeby or Ropsten)
-
-4. **Interact with Contracts:**
-    Each contract includes simple public functions that can be called directly
-    from the Remix IDE or via web3.js in your own frontend application.
-
 ## Contract Details
 
 1. **HelloWorld.sol** - 
